@@ -52,62 +52,72 @@ We have language bindings in Shell, Ruby, and Python! You can view code examples
 
 
 
-  
+
 The Kittn API uses the following error codes:
 
 
-category Object | Explanation
+Shop Object | Meaning
 ---------- | -------
-product.name | Bad Request -- Your request sucks
-product.title | Bad Request -- Your request sucks
-product.description | Unauthorized -- Your API key is wrong
-product.parent | Unauthorized -- Your API key is wrong
-product.slug | Unauthorized -- Your API key is wrong
-product.image_url | Unauthorized -- Your API key is wrong
-product.position | Unauthorized -- Your API key is wrong
+{{ page.name }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ page.support_email }} | Bad Request -- Your request sucks
+{{ page.subdomain }} | Unauthorized -- Your API key is wrong
+
+
+ 
+
+The Kittn API uses the following error codes:
+
+
+Category Object | Explanation
+---------- | -------
+{{ product.name }} | Bad Request -- Your request sucks
+{{ product.title }} | Bad Request -- Your request sucks
+{{ product.description }} | Unauthorized -- Your API key is wrong
+{{ product.parent }} | Unauthorized -- Your API key is wrong
+{{ product.slug }} | Unauthorized -- Your API key is wrong
+{{ product.image_url }} | Unauthorized -- Your API key is wrong
+{{ product.position }} | Unauthorized -- Your API key is wrong
 
 
 
 
 
 The Kittn API uses the following error codes:
-
 
 Product Object | Explanation
 ---------- | -------
-product.id | Bad Request -- Your request sucks
-product.title | Bad Request -- Your request sucks
-product.image_url | Unauthorized -- Your API key is wrong
-product.main_image | Unauthorized -- Your API key is wrong
-product.overview | Unauthorized -- Your API key is wrong
-product.description | Unauthorized -- Your API key is wrong
-product.brand | Unauthorized -- Your API key is wrong
-product.discount | Unauthorized -- Your API key is wrong
-product.tags | Forbidden -- The kitten requested is hidden for administrators only
-product.meta_description | Unauthorized -- Your API key is wrong
-product.meta_keywords | Unauthorized -- Your API key is wrong
-product.slug | Unauthorized -- Your API key is wrong
-product.featured | Unauthorized -- Your API key is wrong
-product.bestseller | Unauthorized -- Your API key is wrong
-product.variants | Unauthorized -- Your API key is wrong
-product.categories | Unauthorized -- Your API key is wrong
-product.images | Unauthorized -- Your API key is wrong
+{{ product.id }} | Bad Request -- Your request sucks
+{{ product.title }} | Bad Request -- Your request sucks
+{{ product.image_url }} | Unauthorized -- Your API key is wrong
+{{ product.main_image }} | Unauthorized -- Your API key is wrong
+{{ product.overview }} | Unauthorized -- Your API key is wrong
+{{ product.description }} | Unauthorized -- Your API key is wrong
+{{ product.brand }} | Unauthorized -- Your API key is wrong
+{{ product.discount }} | Unauthorized -- Your API key is wrong
+{{ product.tags }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ product.meta_description }} | Unauthorized -- Your API key is wrong
+{{ product.meta_keywords }} | Unauthorized -- Your API key is wrong
+{{ product.slug }} | Unauthorized -- Your API key is wrong
+{{ product.featured }} | Unauthorized -- Your API key is wrong
+{{ product.bestseller }} | Unauthorized -- Your API key is wrong
+{{ product.variants }} | Unauthorized -- Your API key is wrong
+{{ product.categories }} | Unauthorized -- Your API key is wrong
+{{ product.images }} | Unauthorized -- Your API key is wrong
 
 
 
 The Kittn API uses the following error codes:
 
-
 Variant Object | Meaning
 ---------- | -------
-page.id | Forbidden -- The kitten requested is hidden for administrators only
-page.image_url | Bad Request -- Your request sucks
-page.title | Unauthorized -- Your API key is wrong
-page.description | Unauthorized -- Your API key is wrong
-page.price | Unauthorized -- Your API key is wrong
-page.recommended_price | Unauthorized -- Your API key is wrong
-page.sku | Unauthorized -- Your API key is wrong
-page.inventory_quantity | Unauthorized -- Your API key is wrong
+{{ page.id }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ page.image_url }} | Bad Request -- Your request sucks
+{{ page.title }} | Unauthorized -- Your API key is wrong
+{{ page.description }} | Unauthorized -- Your API key is wrong
+{{ page.price }} | Unauthorized -- Your API key is wrong
+{{ page.recommended_price }} | Unauthorized -- Your API key is wrong
+{{ page.sku }} | Unauthorized -- Your API key is wrong
+{{ page.inventory_quantity }} | Unauthorized -- Your API key is wrong
 
   
   
@@ -119,17 +129,17 @@ The Kittn API uses the following error codes:
 
 Page Object | Meaning
 ---------- | -------
-page.id | Forbidden -- The kitten requested is hidden for administrators only
-page.title | Bad Request -- Your request sucks
-page.slug | Unauthorized -- Your API key is wrong
-page.body | Not Found -- The specified kitten could not be found
-page.image_url | Not Acceptable -- You requested a format that isn't json
-page.tags | Not Acceptable -- You requested a format that isn't json
-page.position | Method Not Allowed -- You tried to access a kitten with an invalid method
-page.meta_title | Not Acceptable -- You requested a format that isn't json
-page.meta_description | Not Acceptable -- You requested a format that isn't json
-page.meta_keywords | Not Acceptable -- You requested a format that isn't json
-page.layout | Not Acceptable -- You requested a format that isn't json
+{{ page.id }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ page.title }} | Bad Request -- Your request sucks
+{{ page.slug }} | Unauthorized -- Your API key is wrong
+{{ page.body }} | Not Found -- The specified kitten could not be found
+{{ page.image_url }} | Not Acceptable -- You requested a format that isn't json
+{{ page.tags }} | Not Acceptable -- You requested a format that isn't json
+{{ page.position }} | Method Not Allowed -- You tried to access a kitten with an invalid method
+{{ page.meta_title }} | Not Acceptable -- You requested a format that isn't json
+{{ page.meta_description }} | Not Acceptable -- You requested a format that isn't json
+{{ page.meta_keywords }} | Not Acceptable -- You requested a format that isn't json
+{{ page.layout }} | Not Acceptable -- You requested a format that isn't json
 
 
 
@@ -138,15 +148,15 @@ The Kittn API uses the following error codes:
 
 Article Object | Meaning
 ---------- | -------
-page.id | Forbidden -- The kitten requested is hidden for administrators only
-page.title | Bad Request -- Your request sucks
-page.slug | Unauthorized -- Your API key is wrong
-page.content | Not Found -- The specified kitten could not be found
-page.image_url | Not Acceptable -- You requested a format that isn't json
-page.tags | Not Acceptable -- You requested a format that isn't json
-page.seo_title | Method Not Allowed -- You tried to access a kitten with an invalid method
-page.seo_description | Not Acceptable -- You requested a format that isn't json
-page.published_at | Not Acceptable -- You requested a format that isn't json
+{{ page.id }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ page.title }} | Bad Request -- Your request sucks
+{{ page.slug }} | Unauthorized -- Your API key is wrong
+{{ page.content }} | Not Found -- The specified kitten could not be found
+{{ page.image_url }} | Not Acceptable -- You requested a format that isn't json
+{{ page.tags }} | Not Acceptable -- You requested a format that isn't json
+{{ page.seo_title }} | Method Not Allowed -- You tried to access a kitten with an invalid method
+{{ page.seo_description }} | Not Acceptable -- You requested a format that isn't json
+{{ page.published_at }} | Not Acceptable -- You requested a format that isn't json
   
   
   
@@ -154,21 +164,14 @@ page.published_at | Not Acceptable -- You requested a format that isn't json
 The Kittn API uses the following error codes:
 
 
-Shop Object | Meaning
----------- | -------
-page.name | Forbidden -- The kitten requested is hidden for administrators only
-page.support_email | Bad Request -- Your request sucks
-page.subdomain | Unauthorized -- Your API key is wrong
-
-
 
 Link Object | Meaning
 ---------- | -------
-page.menu | Forbidden -- The kitten requested is hidden for administrators only
-page.text | Bad Request -- Your request sucks
-page.url | Unauthorized -- Your API key is wrong
-page.position | Unauthorized -- Your API key is wrong
-page.new_window | Unauthorized -- Your API key is wrong
+{{ page.menu }} | Forbidden -- The kitten requested is hidden for administrators only
+{{ page.text }} | Bad Request -- Your request sucks
+{{ page.url }} | Unauthorized -- Your API key is wrong
+{{ page.position }} | Unauthorized -- Your API key is wrong
+{{ page.new_window }} | Unauthorized -- Your API key is wrong
 
 
 
