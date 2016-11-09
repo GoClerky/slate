@@ -252,6 +252,37 @@ Link Object | Description
 
 
 
+### Review Object
+
+
+> To authorize, use this code:
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+```
+
+```shell
+```
+
+
+Review Object | Description
+---------- | -------
+{{review.rating}} | Forbidden -- The kitten requested is hidden for administrators only
+{{review.review}} | Bad Request -- Your request sucks
+{{review.reviewer}} | Unauthorized -- Your API key is wrong
+{{review.image_url}} | Unauthorized -- Your API key is wrong
+
+
+
+
 ## Tags
 
 Tags create the logic and control flow for templates. They are denoted by curly braces and percent signs: {% and %}.
