@@ -143,36 +143,58 @@
 
 <table><thead>
 <tr>
-<th>category Object</th>
+<th>Shop Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{{ page.name }}</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>{{ page.support_email }}</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>{{ page.subdomain }}</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Category Object</th>
 <th>Explanation</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>product.name</td>
+<td>{{ product.name }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>product.title</td>
+<td>{{ product.title }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>product.description</td>
+<td>{{ product.description }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.parent</td>
+<td>{{ product.parent }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.slug</td>
+<td>{{ product.slug }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.image_url</td>
+<td>{{ product.image_url }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.position</td>
+<td>{{ product.position }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
@@ -186,71 +208,71 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>product.id</td>
+<td>{{ product.id }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>product.title</td>
+<td>{{ product.title }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>product.image_url</td>
+<td>{{ product.image_url }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.main_image</td>
+<td>{{ product.main_image }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.overview</td>
+<td>{{ product.overview }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.description</td>
+<td>{{ product.description }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.brand</td>
+<td>{{ product.brand }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.discount</td>
+<td>{{ product.discount }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.tags</td>
+<td>{{ product.tags }}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>product.meta_description</td>
+<td>{{ product.meta_description }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.meta_keywords</td>
+<td>{{ product.meta_keywords }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.slug</td>
+<td>{{ product.slug }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.featured</td>
+<td>{{ product.featured }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.bestseller</td>
+<td>{{ product.bestseller }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.variants</td>
+<td>{{ product.variants }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.categories</td>
+<td>{{ product.categories }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>product.images</td>
+<td>{{ product.images }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
@@ -264,35 +286,35 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>page.id</td>
+<td>{{ page.id }}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>page.image_url</td>
+<td>{{ page.image_url }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>page.title</td>
+<td>{{ page.title }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.description</td>
+<td>{{ page.description }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.price</td>
+<td>{{ page.price }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.recommended_price</td>
+<td>{{ page.recommended_price }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.sku</td>
+<td>{{ page.sku }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.inventory_quantity</td>
+<td>{{ page.inventory_quantity }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
@@ -306,47 +328,47 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>page.id</td>
+<td>{{ page.id }}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>page.title</td>
+<td>{{ page.title }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>page.slug</td>
+<td>{{ page.slug }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.body</td>
+<td>{{ page.body }}</td>
 <td>Not Found &ndash; The specified kitten could not be found</td>
 </tr>
 <tr>
-<td>page.image_url</td>
+<td>{{ page.image_url }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.tags</td>
+<td>{{ page.tags }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.position</td>
+<td>{{ page.position }}</td>
 <td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
 </tr>
 <tr>
-<td>page.meta_title</td>
+<td>{{ page.meta_title }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.meta_description</td>
+<td>{{ page.meta_description }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.meta_keywords</td>
+<td>{{ page.meta_keywords }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.layout</td>
+<td>{{ page.layout }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 </tbody></table>
@@ -360,39 +382,39 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>page.id</td>
+<td>{{ page.id }}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>page.title</td>
+<td>{{ page.title }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>page.slug</td>
+<td>{{ page.slug }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.content</td>
+<td>{{ page.content }}</td>
 <td>Not Found &ndash; The specified kitten could not be found</td>
 </tr>
 <tr>
-<td>page.image_url</td>
+<td>{{ page.image_url }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.tags</td>
+<td>{{ page.tags }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.seo_title</td>
+<td>{{ page.seo_title }}</td>
 <td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
 </tr>
 <tr>
-<td>page.seo_description</td>
+<td>{{ page.seo_description }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>page.published_at</td>
+<td>{{ page.published_at }}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 </tbody></table>
@@ -401,48 +423,28 @@
 
 <table><thead>
 <tr>
-<th>Shop Object</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>page.name</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>page.support_email</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>page.subdomain</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-</tbody></table>
-
-<table><thead>
-<tr>
 <th>Link Object</th>
 <th>Meaning</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>page.menu</td>
+<td>{{ page.menu }}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>page.text</td>
+<td>{{ page.text }}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>page.url</td>
+<td>{{ page.url }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.position</td>
+<td>{{ page.position }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>page.new_window</td>
+<td>{{ page.new_window }}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
