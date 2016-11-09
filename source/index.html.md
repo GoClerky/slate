@@ -3,11 +3,14 @@ title: API Reference
 
 language_tabs:
   - shell
+  - html
+  - css
   - ruby
   - python
   - javascript
 
 toc_footers:
+  - <a href='#'>Sign Up for Clerky</a>
   - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
@@ -27,7 +30,7 @@ This example API documentation page was created with [Slate](https://github.com/
 
 # Liquid Markup
 
-## Conditional Statements
+## Objects
 
 
 Welcome to the Clerky API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
@@ -52,7 +55,54 @@ api = kittn.authorize('meowmeowmeow')
 ```
 
 ```shell
+```
 
+## Tags
+
+dsdsdsdsdsd
+
+
+
+> To authorize, use this code:
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+```
+
+```shell
+```
+
+
+## Filters
+
+
+
+
+
+> To authorize, use this code:
+
+```ruby
+require 'kittn'
+
+api = Kittn::APIClient.authorize!('meowmeowmeow')
+```
+
+```python
+import kittn
+
+api = kittn.authorize('meowmeowmeow')
+```
+
+```shell
+```
 
 
 # Authentication
