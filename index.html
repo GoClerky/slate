@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Clerky API Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -91,7 +91,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;html&quot;,&quot;css&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;html&quot;,&quot;css&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -101,11 +101,8 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="html">html</a>
               <a href="#" data-language-name="css">css</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
@@ -123,7 +120,13 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
+        <!---
+  - shell
+  - ruby
+  - python
+-->
+
+<h1 id="introduction">Introduction</h1>
 
 <p>Welcome to the Clerky API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
@@ -139,6 +142,18 @@
 
 <p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
+<h3 id="shop-object">Shop Object</h3>
+<pre class="highlight html"><code>    Shop Example
+</code></pre>
+
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight html"><code>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+</code></pre>
+
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
@@ -148,306 +163,306 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ page.name }}</td>
+<td>{{shop.name}}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>{{ page.support_email }}</td>
+<td>{{shop.support_email}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ page.subdomain }}</td>
+<td>{{shop.subdomain}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
+
+<h3 id="category-object">Category Object</h3>
+
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight html"><code>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+</code></pre>
 
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
 <tr>
 <th>Category Object</th>
-<th>Explanation</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ product.name }}</td>
+<td>{{category.name}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ product.title }}</td>
+<td>{{category.title}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ product.description }}</td>
+<td>{{category.description}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.parent }}</td>
+<td>{{category.parent}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.slug }}</td>
+<td>{{category.slug}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.image_url }}</td>
+<td>{{category.image_url}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.position }}</td>
+<td>{{category.position}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
+
+<h3 id="product-object">Product Object</h3>
+
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight html"><code>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+</code></pre>
 
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
 <tr>
 <th>Product Object</th>
-<th>Explanation</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ product.id }}</td>
+<td>{{product.id}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ product.title }}</td>
+<td>{{product.title}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ product.image_url }}</td>
+<td>{{product.image_url}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.main_image }}</td>
+<td>{{product.main_image}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.overview }}</td>
+<td>{{product.overview}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.description }}</td>
+<td>{{product.description}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.brand }}</td>
+<td>{{product.brand}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.discount }}</td>
+<td>{{product.discount}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.tags }}</td>
+<td>{{product.tags}}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>{{ product.meta_description }}</td>
+<td>{{product.meta_description}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.meta_keywords }}</td>
+<td>{{product.meta_keywords}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.slug }}</td>
+<td>{{product.slug}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.featured }}</td>
+<td>{{product.featured}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.bestseller }}</td>
+<td>{{product.bestseller}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.variants }}</td>
+<td>{{product.variants}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.categories }}</td>
+<td>{{product.categories}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ product.images }}</td>
+<td>{{product.images}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
+
+<h3 id="variant-object">Variant Object</h3>
 
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
 <tr>
 <th>Variant Object</th>
-<th>Meaning</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ page.id }}</td>
+<td>{{variant.id}}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>{{ page.image_url }}</td>
+<td>{{variant.image_url}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ page.title }}</td>
+<td>{{variant.title}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.description }}</td>
+<td>{{variant.description}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.price }}</td>
+<td>{{variant.price}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.recommended_price }}</td>
+<td>{{variant.recommended_price}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.sku }}</td>
+<td>{{variant.sku}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.inventory_quantity }}</td>
+<td>{{variant.inventory_quantity}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 </tbody></table>
+
+<h3 id="page-object">Page Object</h3>
 
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
 <tr>
 <th>Page Object</th>
-<th>Meaning</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ page.id }}</td>
+<td>{{page.id}}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>{{ page.title }}</td>
+<td>{{page.title}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ page.slug }}</td>
+<td>{{page.slug}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.body }}</td>
+<td>{{page.body}}</td>
 <td>Not Found &ndash; The specified kitten could not be found</td>
 </tr>
 <tr>
-<td>{{ page.image_url }}</td>
+<td>{{page.image_url}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.tags }}</td>
+<td>{{page.tags}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.position }}</td>
+<td>{{page.position}}</td>
 <td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
 </tr>
 <tr>
-<td>{{ page.meta_title }}</td>
+<td>{{page.meta_title}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.meta_description }}</td>
+<td>{{page.meta_description}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.meta_keywords }}</td>
+<td>{{page.meta_keywords}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.layout }}</td>
+<td>{{page.layout}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 </tbody></table>
+
+<h3 id="article-object">Article Object</h3>
 
 <p>The Kittn API uses the following error codes:</p>
 
 <table><thead>
 <tr>
 <th>Article Object</th>
-<th>Meaning</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>{{ page.id }}</td>
+<td>{{article.id}}</td>
 <td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
 </tr>
 <tr>
-<td>{{ page.title }}</td>
+<td>{{article.title}}</td>
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>{{ page.slug }}</td>
+<td>{{article.slug}}</td>
 <td>Unauthorized &ndash; Your API key is wrong</td>
 </tr>
 <tr>
-<td>{{ page.content }}</td>
+<td>{{article.content}}</td>
 <td>Not Found &ndash; The specified kitten could not be found</td>
 </tr>
 <tr>
-<td>{{ page.image_url }}</td>
+<td>{{article.image_url}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.tags }}</td>
+<td>{{article.tags}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.seo_title }}</td>
+<td>{{article.seo_title}}</td>
 <td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
 </tr>
 <tr>
-<td>{{ page.seo_description }}</td>
+<td>{{article.seo_description}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 <tr>
-<td>{{ page.published_at }}</td>
+<td>{{article.published_at}}</td>
 <td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
 </tr>
 </tbody></table>
 
 <p>The Kittn API uses the following error codes:</p>
 
-<table><thead>
-<tr>
-<th>Link Object</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>{{ page.menu }}</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>{{ page.text }}</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>{{ page.url }}</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>{{ page.position }}</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>{{ page.new_window }}</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-</tbody></table>
+<h3 id="link-object">Link Object</h3>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -461,6 +476,34 @@
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 </code></pre>
 <pre class="highlight shell"><code></code></pre>
+
+<table><thead>
+<tr>
+<th>Link Object</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{{link.menu}}</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>{{link.text}}</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>{{link.url}}</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>{{link.position}}</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>{{link.new_window}}</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
 
 <h2 id="tags">Tags</h2>
 
@@ -720,11 +763,8 @@ Remember — a happy kitten is an authenticated kitten!
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
                 <a href="#" data-language-name="html">html</a>
                 <a href="#" data-language-name="css">css</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
