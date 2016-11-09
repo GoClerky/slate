@@ -131,13 +131,321 @@
 
 <p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
 
-<h1 id="liquid-markup">Liquid Markup</h1>
+<h1 id="website-liquid-markup">Website - Liquid Markup</h1>
 
 <h2 id="objects">Objects</h2>
 
 <p>Welcome to the Clerky API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
 <p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>category Object</th>
+<th>Explanation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>product.name</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>product.title</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>product.description</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.parent</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.slug</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.image_url</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.position</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Product Object</th>
+<th>Explanation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>product.id</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>product.title</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>product.image_url</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.main_image</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.overview</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.description</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.brand</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.discount</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.tags</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>product.meta_description</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.meta_keywords</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.slug</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.featured</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.bestseller</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.variants</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.categories</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>product.images</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Variant Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page.id</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>page.image_url</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>page.title</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.description</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.price</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.recommended_price</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.sku</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.inventory_quantity</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Page Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page.id</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>page.title</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>page.slug</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.body</td>
+<td>Not Found &ndash; The specified kitten could not be found</td>
+</tr>
+<tr>
+<td>page.image_url</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.tags</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.position</td>
+<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
+</tr>
+<tr>
+<td>page.meta_title</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.meta_description</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.meta_keywords</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.layout</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Article Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page.id</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>page.title</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>page.slug</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.content</td>
+<td>Not Found &ndash; The specified kitten could not be found</td>
+</tr>
+<tr>
+<td>page.image_url</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.tags</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.seo_title</td>
+<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
+</tr>
+<tr>
+<td>page.seo_description</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+<tr>
+<td>page.published_at</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+</tr>
+</tbody></table>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Shop Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page.name</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>page.support_email</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>page.subdomain</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Link Object</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page.menu</td>
+<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
+</tr>
+<tr>
+<td>page.text</td>
+<td>Bad Request &ndash; Your request sucks</td>
+</tr>
+<tr>
+<td>page.url</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.position</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+<tr>
+<td>page.new_window</td>
+<td>Unauthorized &ndash; Your API key is wrong</td>
+</tr>
+</tbody></table>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -154,20 +462,21 @@
 
 <h2 id="tags">Tags</h2>
 
-<p>dsdsdsdsdsd</p>
+<p>Tags create the logic and control flow for templates. They are denoted by curly braces and percent signs: {% and %}.</p>
+
+<p>The markup used in tags does not produce any visible text. This means that you can assign variables and create conditions and loops without showing any of the Liquid logic on the page.</p>
+
+<p>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}</p>
 
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<pre class="highlight html"><code>{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code></code></pre>
 
 <h2 id="filters">Filters</h2>
 
@@ -184,7 +493,7 @@
 </code></pre>
 <pre class="highlight shell"><code></code></pre>
 
-<h1 id="authentication">Authentication</h1>
+<h1 id="email-templates">Email Templates</h1>
 
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -220,7 +529,7 @@ curl <span class="s2">"api_endpoint_here"</span>
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-<h1 id="kittens">Kittens</h1>
+<h1 id="merge-tags">Merge Tags</h1>
 
 <h2 id="get-all-kittens">Get All Kittens</h2>
 <pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
