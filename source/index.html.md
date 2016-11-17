@@ -43,7 +43,118 @@ This example API documentation page was created with [Slate](https://github.com/
 
 ## More Styles
 
+Default buttons
 
+<!-- Default -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Primary -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Success -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Info -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Warning -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Danger -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link Button</button>
+
+
+
+Sizes
+
+
+
+<!-- Large button -->
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+
+<!-- Default (medium) button -->
+<button type="button" class="btn btn-primary">Default button</button>
+
+<!-- Small button -->
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+
+<!-- Extra small button -->
+<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+
+<!-- Block level button (full width) -->
+<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+
+
+
+3-D buttons
+
+
+<!-- Default -->
+<button type="button" class="btn btn-default btn-3d">Default</button>
+
+<!-- Primary -->
+<button type="button" class="btn btn-primary btn-3d">Primary</button>
+
+<!-- Success -->
+<button type="button" class="btn btn-success btn-3d">Success</button>
+
+<!-- Info -->
+<button type="button" class="btn btn-info btn-3d">Info</button>
+
+<!-- Warning -->
+<button type="button" class="btn btn-warning btn-3d">Warning</button>
+
+<!-- Danger -->
+<button type="button" class="btn btn-danger btn-3d">Danger</button>
+
+
+Color 3-D buttons
+
+
+<!--
+AVAILABLE COLORS
+
+.btn-default
+.btn-success
+.btn-danger
+.btn-warning
+.btn-info
+
+.btn-red
+.btn-teal
+.btn-yellow
+.btn-green
+.btn-brown
+.btn-aqua
+.btn-lime
+.btn-purple
+.btn-leaf
+.btn-pink
+.btn-dirtygreen
+.btn-blue
+.btn-amber
+.btn-black
+.btn-white
+
+-->
+
+<a href="#" class="btn btn-3d btn-red"><i class="et-megaphone"></i>Red</a>
+<a href="#" class="btn btn-3d btn-teal"><i class="et-beaker"></i>Teal</a>
+<a href="#" class="btn btn-3d btn-yellow"><i class="icon-beaker"></i>Yellow</a>
+<a href="#" class="btn btn-3d btn-green"><i class="et-trophy"></i>Green</a>
+<a href="#" class="btn btn-3d btn-brown"><i class="et-basket"></i>Brown</a>
+<a href="#" class="btn btn-3d btn-aqua"><i class="et-key"></i>Aqua</a>
+<a href="#" class="btn btn-3d btn-purple"><i class="et-tools"></i>Purple</a>
+<a href="#" class="btn btn-3d btn-leaf"><i class="et-tools-2"></i>Leaf</a>
+<a href="#" class="btn btn-3d btn-pink"><i class="et-shield"></i>Pink</a>
+<a href="#" class="btn btn-3d btn-blue"><i class="et-strategy"></i>Blue</a>
+<a href="#" class="btn btn-3d btn-dirtygreen"><i class="et-caution"></i>Dirty Green</a>
+<a href="#" class="btn btn-3d btn-amber"><i class="et-heart"></i>Amber</a>
+<a href="#" class="btn btn-3d btn-black"><i class="et-clock"></i>Black</a>
+<a href="#" class="btn btn-3d btn-white"><i class="et-chat"></i>White</a>
 
 
 
