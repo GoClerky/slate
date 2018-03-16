@@ -238,6 +238,31 @@ Category Object | Description
 {% if user %}
   Hello {{ user.name }}!
 {% endif %}
+
+
+
+{% for product in products %}
+  
+	{{product.title}}
+
+	{{ product.image_url }}
+
+  	{% for variant in product.variants %}
+  		{{ variant.title }}
+    	{{ variant.price | money }}
+	{% endfor %}
+  
+{% endfor %}
+
+
+
+
+
+{% tablerow product in products cols:2 %}
+	{{ product.title }}
+{% endtablerow %}
+
+
 ```
 
 
